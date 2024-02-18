@@ -184,7 +184,7 @@ h6,
     }
     
     .sticky-top.navbar-dark {
-        position: fixed;
+        position: absolute;
         background: #FFFFFF;
     }
 
