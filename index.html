@@ -3,15 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Smart-Horizan</title>
+    <title>Smart Horizan</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/smart1.png" rel="icon">
+    <link href="img/ammar_company_logo.pdf6_copy-1-removebg-preview.png" rel="icon" >
 
     <!-- Google Web Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,11 +29,18 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
-
+<style>
+    .fixed-card-size {
+        width: 400px; /* Set the desired width */
+        height: 380px; /* Set the desired height */
+      }
+      
+</style>
 
 <body>
     <!-- Spinner Start -->
@@ -46,50 +56,77 @@
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <a href="index.html" class="navbar-brand p-0" style="position: relative;">
-                <img src="img/smart1.png" style="width:200px; opacity:0.5">
+                <img src="img/ammar_company_logo.pdf6_copy-1-removebg-preview.png" style="width:60px; ;margin-left:70px">
            
             </a>
-            
-            
-            
-            
+        
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link" style="font-family:'Poppins', sans-serif;">Home </a>
+                    <a href="index.html" class="nav-item nav-link" style="font-family:'Poppins', sans-serif;" >Home </a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                        <a  href="Services.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" >Services</a>
                         <div class="dropdown-menu m-0">
-                            <a href="blog.html" class="dropdown-item" style="font-family:'Poppins', sans-serif;">Software</a>
-                            <a href="detail.html" class="dropdown-item" style="font-family:'Poppins', sans-serif;">Data Analytics</a>
-                            <a href="blog.html" class="dropdown-item" style="font-family:'Poppins', sans-serif;">Marketing SolutionS </a>
-                            <a href="detail.html" class="dropdown-item">App Development</a>
-                            <a href="blog.html" class="dropdown-item">Web Design</a>
-                            <a href="detail.html" class="dropdown-item">Integration Services</a>
-                            <a href="blog.html" class="dropdown-item">E-commerce</a>
+
+                            <!-- <a href="software.html" class="dropdown-item" style="font-family:'Poppins', sans-serif;">Software </a> -->
+                            <li class="dropdown"  style="margin-left:10px;font-size:12px;"><a href="software.html" style="font-family:'Poppins', sans-serif;"><span style="margin-left:7px;color:#212529">Software</span> <i class="bi bi-chevron-right"></i></a>
+                                <ul style="width:190px">
+                                  <li><a href="SoftwareDevelop.html" style="font-size:12px;">Software Development </a></li>
+                                  <li><a href="SoftwareTesting.html" style="font-size:12px;">Software Testing</a></li>
+                                
+                                </ul>
+                              </li>
+                            <a href="DataAnalysis.html" class="dropdown-item" style="font-family:'Poppins', sans-serif;font-size:12px; ">Data Analytics</a>
+                            <a href="markting.html" class="dropdown-item" style="font-family:'Poppins', sans-serif;font-size:12px; ">Marketing Solution </a>
+                            <li class="dropdown" style=" margin-left:10px;font-size:12px;"><a href="AppDevelopment.html" style="font-family:'Poppins', sans-serif;"><span style="color:#212529">App Development</span> <i class="bi bi-chevron-right"></i></a>
+                                <ul  style="width:190px">
+                                  <li><a href="MobileDevelopment.html" style="font-size:12px;">MobileApp Development </a></li>
+                                  <li><a href="Web App Development.html" style="font-size:12px;">WebApp Development</a></li>
+                                
+                                </ul>
+                              </li>
+                            <!-- <a href="AppDevelopment.html" class="dropdown-item">App Development</a> -->
+                            <a href="WebDesign.html" class="dropdown-item" style="font-size:12px;">Web Design</a>
+
+                            <li class="dropdown" style=" margin-left:10px;font-size:12px;"><a href="integrationServices.html" style="font-family:'Poppins', sans-serif;"><span style="color:#212529">Integration Services</span> <i class="bi bi-chevron-right"></i></a>
+                                <ul  style="width:190px">
+                                  <li><a href="integrationServices.html" style="font-size:12px;  ">Dell Boomt Services </a></li>
+                                  <li><a href="Mulesoft.html" style="font-size:12px;">Mulesoft</a></li>
+                                
+                                </ul>
+                              </li>
+                            <!-- <a href="integrationServices.html" class="dropdown-item">Integration Services</a> -->
+                            <li class="dropdown" style=" margin-left:10px;font-size:12px;"><a href="Ecommerce.html" style="font-family:'Poppins', sans-serif;color:#212529"><span >E-commerce</span> <i class="bi bi-chevron-right"></i></a>
+                                <ul style="width:190px" >
+                                    <li><a href="spotify.html" class="smaller-font">Shopify</a></li>
+                                    <li><a href="MAGENTO.html" class="smaller-font">Magento</a></li>
+                                    
+                                
+                                </ul>
+                              </li>
                         
                         </div>
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Industries</a>
                         <div class="dropdown-menu m-0">
-                            <a href="blog.html" class="dropdown-item">Healthcare and lifesciences</a>
-                            <a href="detail.html" class="dropdown-item">Banking</a>
-                            <a href="blog.html" class="dropdown-item"> Retail</a>
-                            <a href="detail.html" class="dropdown-item">Energy & Utilities</a>
-                            <a href="blog.html" class="dropdown-item">Government and PSUs</a>
-                            <a href="detail.html" class="dropdown-item">Engineering and Telecom</a>
-                            <a href="blog.html" class="dropdown-item">Media & Entertainment</a>
-                            <a href="blog.html" class="dropdown-item">Hi-Tech</a>
+                            <a href="Healthcare.html" class="dropdown-item">HealthCare & Lifestyle</a>
+                            <a href="Banking.html" class="dropdown-item">Banking</a>
+                            <a href="Retail.html" class="dropdown-item">Retail</a>
+                            <a href="Energy and Utilities.html" class="dropdown-item">Energy & Utilities</a>
+                            <a href="Government and PSU.html" class="dropdown-item">Government and PSU</a>
+                            <a href="Engineering and Telecom.html" class="dropdown-item">Engineering and Telecom</a>
+                            <a href="Media.html" class="dropdown-item">Media & Entertainment</a>
+                            <a href="Hi-Tech.html" class="dropdown-item">Hi-Tech</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Center Of Excellence</a>
                         <div class="dropdown-menu m-0">
-                            <a href="blog.html" class="dropdown-item">SAP Service</a>
-                            <a href="detail.html" class="dropdown-item">Mendix</a>
+                            <a href="SAP.html" class="dropdown-item">SAP Service</a>
+                            <a href="Mendex.html" class="dropdown-item">Mendix</a>
                         </div>
                     </div>
                     <a href="about.html" class="nav-item nav-link">About</a>
@@ -101,46 +138,43 @@
 
             </div>
         </nav>
-
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/slider4.jpg" alt="Image">
-                    
+                    <img class="w-100" src="img/ECOMMERCE.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown" style="font-size:40px;font-family:'Poppins', sans-serif;">TAKE A LOOK AT OUR SERVICES</h5>
-
-                        <!-- <h1 class="display-1 text-white mb-md-4 animated zoomIn">Creative & Innovative Digital Solution</h1> -->
-
-                            <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight" style="font-family:'Poppins', sans-serif;">Watch Industries</a>
+                            <a href="#Service" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight" style="font-family:'Poppins', sans-serif;">WATCH SERVICES</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/sldier3.jpg" alt="Image">
+                    <img class="w-100" src="img/APP33.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown" style="font-size:40px;font-family:'Poppins', sans-serif;">TAKE A LOOK AT OUR SERVICES</h5>
-
-                            <!-- <h1 class="display-1 text-white mb-md-4 animated zoomIn">Creative & Innovative Digital Solution</h1> -->
-
-                            <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight" style="font-family:'Poppins', sans-serif;">Watch Industries</a>
+                            <a href="#industry" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight" style="font-family:'Poppins', sans-serif;">Watch Industries</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/Development.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown" style="font-size:40px;font-family:'Poppins', sans-serif;">WHY CHOOSE US</h5>
+                            <a href="#us" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight" style="font-family:'Poppins', sans-serif;">WHY CHOOSE US</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-indicators" style="margin-bottom: 150px;">
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
         </div>
+        
     </div>
     <!-- Navbar & Carousel End -->
 
@@ -152,11 +186,7 @@
                 <div class="modal-header border-0">
                     <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
-                    </div>
+              
                 </div>
             </div>
         </div>
@@ -214,18 +244,16 @@
                 <div class="col-lg-7">
                     <div class="section-title position-relative pb-3 mb-5">
                         <h5 class="fw-bold text-primary text-uppercase" style=" font-family:'Poppins', sans-serif;">About Us</h5>
-                        <h1 class="mb-0" style=" font-family:'Poppins', sans-serif;">The Best IT Solution With 10 Years of Experience</h1>
+                        <h1 class="mb-0" style=" font-family:'Poppins', sans-serif; ">The Best IT Solution With 10 Years of Experience</h1>
                     </div>
-                    <p class="mb-4">Established in 2010 we are a full-IT services firm offering affordable and advanced solutions to international businesses across domains & geographies. Transparency in operations, timely deliveries of projects, and focus on customer satisfaction have benefited our patrons. Our skilled talent pool helps them stay ahead, in terms of expertise as well as market intelligence.
+                    <p class="mb-4" style="color:rgb(75, 73, 73); font-size:20px ;font-family:'Poppins', sans-serif;">Established in 2010 we are a full-IT services firm offering affordable and advanced solutions to international businesses across domains & geographies. 
+                        Transparency in operations, timely deliveries of projects, and focus on customer satisfaction have benefited our patrons. <br>
+                        Our skilled talent pool helps them stay ahead, in terms of expertise as well as market intelligence.
+                      
 
                     </p>
                     <div class="row g-0 mb-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3" style=" font-family:'Poppins', sans-serif;"><i class="fa fa-check text-primary me-3"></i>Our Mission <span style="color: #606060;font-size:10px"><br>
-                                 To strive for customer delight, with pinnacle quality & cost effective services/solutions</span></h5>
-                                 <h5 class="mb-3" style=" font-family:'Poppins', sans-serif;"><i class="fa fa-check text-primary me-3"></i>Our Vision <span style="color: #606060;font-size:10px"><br>
-                                    To become the most preferred partner in the ITES/IT sector by exceeding customer expectations and fostering lasting relationships through excellence in service</span></h5></h5>
-                        </div>
+                      
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
 
                         </div>
@@ -248,10 +276,10 @@
 
 
     <!-- Features Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="us">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase" style=" font-family:'Poppins', sans-serif;">Why Choose Us</h5>
+                <h5 class="fw-bold text-primary text-uppercase" style=" font-family:'Poppins', sans-serif; color:#061429 !important; Font-Size:36px !important">Why Choose Us</h5>
                 <!-- <h1 class="mb-0">We Are Here to Grow Your Business Exponentially</h1> -->
             </div>
             <div class="row g-5">
@@ -308,21 +336,21 @@
 
 
     <!-- Service Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="Service">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase" style=" font-family:'Poppins', sans-serif;">Our Services</h5>
+                <h5 class="fw-bold text-primary text-uppercase" style=" font-family:'Poppins', sans-serif;color:#061429 !important; FONT-SIZE:36PX !important"> Services</h5>
                 <!-- <h1 class="mb-0">Custom IT Solutions for Your Successful Business</h1> -->
             </div>
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
                         <div class="service-icon">
-                            <i class="fa fa-code text-white"></i>
+                            <i class="fa-brands fa-uncharted text-white"></i>
                         </div>
                         <h4 class="mb-3" style=" font-family:'Poppins', sans-serif;">Software Development</h4>
-                        <p class="m-0" style=" font-family:'Poppins', sans-serif;">From engineering to design and deployment, we offer end-to-end software development services for organizations across industries. </p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <p class="m-0" style=" font-family:'Poppins', sans-serif;font-size:14px">From engineering to design and deployment, we offer end-to-end software development services for organizations across industries. </p>
+                        <a class="btn btn-lg btn-primary rounded" href="software.html">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -333,8 +361,20 @@
                             <i class="fa fa-chart-pie text-white"></i>
                         </div>
                         <h4 class="mb-3" style=" font-family:'Poppins', sans-serif;">Data Analytics</h4>
-                        <p class="m-0" style=" font-family:'Poppins', sans-serif;">Bridge the gap between analytics and execution, and translate analytics into better business decision-making with us. As data continues to grow at an exponential </p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <p class="m-0" style=" font-family:'Poppins', sans-serif;font-size:14px">Bridge the gap between analytics and execution, and translate analytics into better business decision-making with us. As data continues to grow at an exponential </p>
+                        <a class="btn btn-lg btn-primary rounded" href="DataAnalysis.html">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa-brands fa-servicestack text-white"></i>
+                        </div>
+                        <h4 class="mb-3" style=" font-family:'Poppins', sans-serif;">Dell Boomi Services</h4>
+                        <p class="m-0" style=" font-family:'Poppins', sans-serif;font-size:14px">Smart Horizan Informatics has rich expertise in Digital transformation of the organizations by providing the best-in-class Dell Boomi Services.</p>
+                        <a class="btn btn-lg btn-primary rounded" href="IntegrationServices.html">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -344,9 +384,9 @@
                         <div class="service-icon">
                             <i class="fa fa-code text-white"></i>
                         </div>
-                        <h4 class="mb-3" style=" font-family:'Poppins', sans-serif;">Software Testing</h4>
-                        <p class="m-0" style=" font-family:'Poppins', sans-serif;">Mobile, Computers, or Cloud-based, we provide independent software testing services for all types of software. We believe that QA and testing should ...</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <h4 class="mb-3" style=" font-family:'Poppins', sans-serif;">Software Engineering</h4>
+                        <p class="m-0" style=" font-family:'Poppins', sans-serif;font-size:14px">Mobile, Computers, or Cloud-based, we provide independent software testing services for all types of software. We believe that QA and testing should ...</p>
+                        <a class="btn btn-lg btn-primary rounded" href="Engineering and Telecom.html">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -357,8 +397,33 @@
                             <i class="fab fa-android text-white"></i>
                         </div>
                         <h4 class="mb-3" style=" font-family:'Poppins', sans-serif;">Application Development</h4>
-                        <p class="m-0" style=" font-family:'Poppins', sans-serif;">Applications are governing the way we do business, and our team has been an active participant in this. </p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <p class="m-0" style=" font-family:'Poppins', sans-serif;font-size:14px">Applications are governing the way we do business, and our team has been an active participant in this. </p>
+                        <a class="btn btn-lg btn-primary rounded" href="AppDevelopment.html">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+               
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-globe text-white"></i>
+                        </div>
+                        <h4 class="mb-3" style=" font-family:'Poppins', sans-serif;"> Web Design  </h4>
+                        <p class="m-0" style=" font-family:'Poppins', sans-serif;font-size:14px">Responsive web design that adjusts with different screen sizes for all devices. Websites and applications with responsive </p>
+                        <a class="btn btn-lg btn-primary rounded" href="WebDesign.html">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-network-wired text-white"></i>
+                        </div>
+                        <h4 class="mb-3" style=" font-family:'Poppins', sans-serif;"> Integration Services </h4>
+                        <p class="m-0" style=" font-family:'Poppins', sans-serif;font-size:14px">Smart Horizan helps businesses integrate ERPs, cloud data with the On-premises Applications and make them interoperable and compatible with other business solutions...</p>
+                        <a class="btn btn-lg btn-primary rounded" href="integrationServices.html">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -369,56 +434,21 @@
                             <i class="fa fa-search text-white"></i>
                         </div>
                         <h4 class="mb-3" style=" font-family:'Poppins', sans-serif;">Marketing Services  </h4>
-                        <p class="m-0" style=" font-family:'Poppins', sans-serif;">We help you stand out in the cacophony of brands in the digital space. Making your brand presence strong is the only way to beat the competition...</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <p class="m-0" style=" font-family:'Poppins', sans-serif;font-size:14px">We help you stand out in the cacophony of brands in the digital space. Making your brand presence strong is the only way to beat the competition...</p>
+                        <a class="btn btn-lg btn-primary rounded" href="markting.html">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
                 </div>
+                
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
                         <div class="service-icon">
-                            <i class="fa fa-search text-white"></i>
-                        </div>
-                        <h4 class="mb-3" style=" font-family:'Poppins', sans-serif;"> Web Design  </h4>
-                        <p class="m-0" style=" font-family:'Poppins', sans-serif;">Responsive web design that adjusts with different screen sizes for all devices. Websites and applications with responsive </p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-search text-white"></i>
-                        </div>
-                        <h4 class="mb-3" style=" font-family:'Poppins', sans-serif;"> Integration Services </h4>
-                        <p class="m-0" style=" font-family:'Poppins', sans-serif;">Smart Horizan helps businesses integrate ERPs, cloud data with the On-premises Applications and make them interoperable and compatible with other business solutions...</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-search text-white"></i>
-                        </div>
-                        <h4 class="mb-3" style=" font-family:'Poppins', sans-serif;">Dell Boomi Services</h4>
-                        <p class="m-0" style=" font-family:'Poppins', sans-serif;">Smart Horizan Informatics has rich expertise in Digital transformation of the organizations by providing the best-in-class Dell Boomi Services.</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-search text-white"></i>
+                            <i class="fa-solid fa-dumpster text-white"></i>
                         </div>
                         <h4 class="mb-3"  style=" font-family:'Poppins', sans-serif;">E-commerce</h4>
-                        <p class="m-0"  style=" font-family:'Poppins', sans-serif;">Smart Horizan provides end to end E-commerce solutions to all the Business verticals. We provide tailor made solutions not only confined to the E-commerce..</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
+                        <p class="m-0"  style=" font-family:'Poppins', sans-serif;font-size:14px">Smart Horizan provides end to end E-commerce solutions to all the Business verticals. We provide tailor made solutions not only confined to the E-commerce..</p>
+                        <a class="btn btn-lg btn-primary rounded" href="Ecommerce.html">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -429,30 +459,30 @@
     <!-- Service End -->
 
     <!-- Testimonial Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="industry">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
                 <!-- <h5 class="fw-bold text-primary text-uppercase">Testimonial</h5> -->
                 <h1 class="mb-0"  style=" font-family:'Poppins', sans-serif;">INDUSTRIES</h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
-                <div class="testimonial-item bg-light my-4">
+                <div class="testimonial-item bg-light my-4 fixed-card-size">
                     <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                         <!-- <img class="img-fluid rounded" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" > -->
                         <div class="ps-4">
-                            <h4 class="text-primary mb-1"  style=" font-family:'Poppins', sans-serif;">RETAIL</h4>
+                            <h4 class="text-primary mb-1"  style=" font-family:'Poppins', sans-serif;color:#061429 !important"> <i class="fa-solid fa-circle-info" style="margin-right: 10px;"></i>RETAIL</h4>
                             <!-- <small class="text-uppercase">Profession</small> -->
                         </div>
                     </div>
-                    <div class="pt-4 pb-5 px-5"  style=" font-family:'Poppins', sans-serif;"> 
-                        The retail industry has been growing at a phenomenal rate-and is always ready to lap up new ideas that offer a great customer experience, improve supply chain management, and reduce costs. SAGE has been powering this industry with advanced solu/ons that help achieve their goals
+                    <div class="pt-4 pb-5 px-5"  style=" font-family:'Poppins', sans-serif; "> 
+                        The retail industry has been growing at a phenomenal rate-and is always ready to lap up new ideas that offer a great customer experience, improve supply chain management, and reduce costs. Smart Horizan has been powering this industry with advanced solu/ons that help achieve their goals
                     </div>
                 </div>
-                <div class="testimonial-item bg-light my-4">
+                <div class="testimonial-item bg-light my-4 fixed-card-size">
                     <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                         <!-- <img class="img-fluid rounded" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" > -->
                         <div class="ps-4">
-                            <h4 class="text-primary mb-1"  style=" font-family:'Poppins', sans-serif;">HEALTHCARE AND LIFESCIENCES</h4>
+                            <h4 class="text-primary mb-1"  style=" font-family:'Poppins', sans-serif;color:#061429 !important"> <i class="fa-solid fa-notes-medical" style="margin-right: 10px;"></i>HEALTHCARE AND LIFESCIENCES</h4>
                             <!-- <small class="text-uppercase">Profession</small> -->
                         </div>
                     </div>
@@ -460,11 +490,11 @@
                         At Smart-Horizan, we oﬀer transformational healthcare technology and services that equip healthcare providers with better tools and ways to serve their patients. OUR USP
                     </div>
                 </div>
-                <div class="testimonial-item bg-light my-4">
+                <div class="testimonial-item bg-light my-4 fixed-card-size">
                     <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                         <!-- <img class="img-fluid rounded" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" > -->
                         <div class="ps-4">
-                            <h4 class="text-primary mb-1"  style=" font-family:'Poppins', sans-serif;">BFSI</h4>
+                            <h4 class="text-primary mb-1"  style=" font-family:'Poppins', sans-serif;color:#061429 !important"> <i class="fa-solid fa-asterisk" style="margin-right: 10px;"></i> BFSI</h4>
                             <!-- <small class="text-uppercase">Profession</small> -->
                         </div>
                     </div>
@@ -472,11 +502,11 @@
                         Smart-Horizan has the right domain expertise and technology know- how to deliver winning solutions for the BFSI sector. Our main focus for BFSI is oﬀering superior customer experience across diﬀerent touch-points, adhering to best practices for operations & risk management...
                     </div>
                 </div>
-                <div class="testimonial-item bg-light my-4">
+                <div class="testimonial-item bg-light my-4 fixed-card-size">
                     <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                         <!-- <img class="img-fluid rounded" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" > -->
                         <div class="ps-4">
-                            <h4 class="text-primary mb-1" style=" font-family:'Poppins', sans-serif;" >ENERGY & UTILITIES</h4>
+                            <h4 class="text-primary mb-1" style=" font-family:'Poppins', sans-serif;color:#061429 !important" > <i class="fa-regular fa-lightbulb" style="margin-right:10px"></i> ENERGY & UTILITIES</h4>
                             <!-- <small class="text-uppercase">Profession</small> -->
                         </div>
                     </div>
@@ -484,11 +514,11 @@
                         Smart-Horizan has been a solution provider to the Energy and Utility sector for years. We have delivered smart solutions for electric and water management utilities, helping them reap the benefits of digital technology.
                     </div>
                 </div>
-                <div class="testimonial-item bg-light my-4">
+                <div class="testimonial-item bg-light my-4  fixed-card-size">
                     <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                         <!-- <img class="img-fluid rounded" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" > -->
                         <div class="ps-4">
-                            <h4 class="text-primary mb-1"  style=" font-family:'Poppins', sans-serif;" >GOVERNMENT AND PSUS</h4>
+                            <h4 class="text-primary mb-1"  style=" font-family:'Poppins', sans-serif;color:#061429 !important" > <i class="fa-solid fa-shield-halved" style="margin-right:10px"></i>GOVERNMENT AND PSUS</h4>
                             <!-- <small class="text-uppercase">Profession</small> -->
                         </div>
                     </div>
@@ -496,23 +526,12 @@
                         Smart-Horizan hasbeen a trusted partner for diferent government institutions at the central, state, and local governments. We have been instrumental in helping the public sector leverage technology to address their key imperatives.
                     </div>
                 </div>
-                <div class="testimonial-item bg-light my-4">
+               
+                <div class="testimonial-item bg-light my-4 fixed-card-size">
                     <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                         <!-- <img class="img-fluid rounded" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" > -->
                         <div class="ps-4">
-                            <h4 class="text-primary mb-1"  style=" font-family:'Poppins', sans-serif;" >ENGINEERING AND TELECOM</h4>
-                            <!-- <small class="text-uppercase">Profession</small> -->
-                        </div>
-                    </div>
-                    <div class="pt-4 pb-5 px-5"  style=" font-family:'Poppins', sans-serif;" >
-                        Smart-Horizan has been a dedicated technology partner for some of the world's largest telecom companies. This exposure has helped us understand the challenges that our clients face and build tailored solutions for their diﬀerent needs.
-                    </div>
-                </div>
-                <div class="testimonial-item bg-light my-4">
-                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                        <!-- <img class="img-fluid rounded" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" > -->
-                        <div class="ps-4">
-                            <h4 class="text-primary mb-1"  style=" font-family:'Poppins', sans-serif;" >MEDIA & ENTERTAINMENT</h4>
+                            <h4 class="text-primary mb-1"  style=" font-family:'Poppins', sans-serif;color:#061429 !important" > <i class="fa-solid fa-share-from-square"  style="margin-right: 10px;"></i> MEDIA & ENTERTAINMENT</h4>
                             <!-- <small class="text-uppercase">Profession</small> -->
                         </div>
                     </div>
@@ -520,11 +539,11 @@
                        Media and entertainment is one of the most dynamic and diverse industries where new and old platforms coexist. The industry has witnessed a sea change in the last decade and is growing big in parallel with emerging technologies
                     </div>
                 </div>
-                <div class="testimonial-item bg-light my-4">
+                <div class="testimonial-item bg-light my-4 fixed-card-size">
                     <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                         <!-- <img class="img-fluid rounded" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" > -->
                         <div class="ps-4">
-                            <h4 class="text-primary mb-1"  style=" font-family:'Poppins', sans-serif;" >ENGINEERING AND TELECOM</h4>
+                            <h4 class="text-primary mb-1"  style=" font-family:'Poppins', sans-serif;color:#061429 !important" > <i class="fa-solid fa-tv" style="margin-right:10px;"></i> ENGINEERING AND TELECOM</h4>
                             <!-- <small class="text-uppercase">Profession</small> -->
                         </div>
                     </div>
@@ -532,11 +551,11 @@
                         Smart-Horizan has been a dedicated technology partner for some of the world's largest telecom companies. This exposure has helped us understand the challenges that our clients face and build tailored solutions for their diﬀerent needs.
                     </div>
                 </div>
-                <div class="testimonial-item bg-light my-4">
+                <div class="testimonial-item bg-light my-4 fixed-card-size">
                     <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                         <!-- <img class="img-fluid rounded" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" > -->
                         <div class="ps-4">
-                            <h4 class="text-primary mb-1"  style=" font-family:'Poppins', sans-serif;" >HI-TECH</h4>
+                            <h4 class="text-primary mb-1"  style=" font-family:'Poppins', sans-serif;color:#061429 !important" > <i class="fa-solid fa-microchip" style="margin-right: 10px;"></i>HI-TECH</h4>
                             <!-- <small class="text-uppercase">Profession</small> -->
                         </div>
                     </div>
@@ -552,253 +571,66 @@
     <!-- Testimonial End -->
 
 
-    <!-- Team Start -->
-    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Team Members</h5>
-                <h1 class="mb-0">Professional Stuffs Ready to Help Your Business</h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Full Name</h4>
-                            <p class="text-uppercase m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Team End -->
+   
 
 
-    <!-- Blog Start -->
-    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Latest Blog</h5>
-                <h1 class="mb-0">Read The Latest Articles from Our Blog Post</h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/blog-1.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex mb-3">
-                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
-                            </div>
-                            <h4 class="mb-3">How to build a website</h4>
-                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
-                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/blog-2.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex mb-3">
-                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
-                            </div>
-                            <h4 class="mb-3">How to build a website</h4>
-                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
-                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/blog-3.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex mb-3">
-                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
-                            </div>
-                            <h4 class="mb-3">How to build a website</h4>
-                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
-                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Blog Start -->
+  
 
 
-    <!-- Vendor Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5 mb-5">
-            <div class="bg-white">
-                <div class="owl-carousel vendor-carousel">
-                    <img src="img/vendor-1.jpg" alt="">
-                    <img src="img/vendor-2.jpg" alt="">
-                    <img src="img/vendor-3.jpg" alt="">
-                    <img src="img/vendor-4.jpg" alt="">
-                    <img src="img/vendor-5.jpg" alt="">
-                    <img src="img/vendor-6.jpg" alt="">
-                    <img src="img/vendor-7.jpg" alt="">
-                    <img src="img/vendor-8.jpg" alt="">
-                    <img src="img/vendor-9.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Vendor End -->
     
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    
+    <!-- start footer Area -->
+    <footer class="footer-area area-padding-top">
         <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-4 col-md-6 footer-about">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
-                        <a href="index.html" class="navbar-brand" style="position: relative;">
-                            
-                            <h1 class="m-0 text-white" style="font-size:30px; display: inline-block; vertical-align: middle; margin: 0;">
-                                <img src="img/smart1.png" style="width:280px; opacity:0.5; margin-left:55px !important;">
-
-                            </h1>
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        <p class="mt-3 mb-4">Lorem diam sit erat dolor elitr et, diam lorem justo amet clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.</p>
-                        <form action="">
-                            <div class="input-group">
-                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                                <button class="btn btn-dark">Sign Up</button>
-                            </div>
-                        </form>
-                    </div>
+            <div class="row">
+                <div class="col-lg-2 col-sm-6 single-footer-widget">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="SoftwareDevelop.html">Software Development</a></li>
+                        <li><a href="DataAnalysis.html">Data Analytics</a></li>
+                        <li><a href="MobileDevelopment.html">Application Development</a></li>
+                        <li><a href="integrationServices.html">Integration Services</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-8 col-md-6">
-                    <div class="row gx-5">
-                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Get In Touch</h3>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-geo-alt text-primary me-2"></i>
-                                <p class="mb-0">123 Street, New York, USA</p>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">info@example.com</p>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0">+012 345 67890</p>
-                            </div>
-                            <div class="d-flex mt-4">
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Quick Links</h3>
-                            </div>
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Popular Links</h3>
-                            </div>
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-2 col-sm-6 single-footer-widget">
+                    <h4>INDUSTRIES</h4>
+                    <ul>
+                        <li><a href="Healthcare.html">HealthCare & Lifestyle</a></li>
+                        <li><a href="Banking.html">Banking</a></li>
+                        <li><a href="Energy and Utilities.html">Energy & Utilities</a></li>
+                        <li><a href="Engineering and Telecom.html">Engineering and Telecom</a></li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid text-white" style="background: #061429;">
-        <div class="container text-center">
-            <div class="row justify-content-end">
-                <div class="col-lg-8 col-md-6">
+             
+                <div class="col-lg-2 col-sm-6 single-footer-widget">
+                    <h4> EXCELLENCE</h4>
+                    <ul>
+                        <li><a href="SAP.html">SAP Service</a></li>
+                        <li><a href="Mendex.html">Mendex</a></li>
                   
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 single-footer-widget">
+                    <h4>SMART HORZIAN !</h4>
+                    <p>You can trust us. we only send promo offers.</p>
+                    <div class="form-wrap" id="mc_embed_signup">
+                       
                 </div>
             </div>
         </div>
+        <div class="row footer-bottom d-flex justify-content-between">
+           
+            <div class="col-lg-4 col-sm-12 footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </div>
-    <!-- Footer End -->
-
+</footer>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
